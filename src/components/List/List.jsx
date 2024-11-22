@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Produit } from '../Produit/Produit'
 
-export function List({list}) { 
+export function List({list, addToCart}) { 
 
     const [filter, setFilter]=useState(0)
     const [filteredProducts, setFilteredProducts]=useState([])
@@ -31,7 +31,7 @@ export function List({list}) {
             <button onClick={handleFilter} value="3">Conserves</button>
             <button onClick={handleFilter} value="4">Confiseries</button>
             {filteredProducts.map((product, index) => 
-                <Produit key={index} product={product} />
+                <Produit key={index} product={product} addToCart={addToCart} />
             )} 
         </>
     )
