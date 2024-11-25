@@ -32,7 +32,7 @@ function App() {
       } 
       //enfin on renvoie l'élément
       return item
-      //à ce stade, j'ai un nouveau tableau mis à jour que je vais pouvoir envoyer à setListProducts, il ne reste qu'à mettre en place la même chose pour le panier
+      //à ce stade, j'ai un nouveau tableau mis à jour que je vais pouvoir envoyer à setList, il ne reste qu'à mettre en place la même chose pour le panier
     })
 
     const updatedCartProducts = cart.map((item) => {
@@ -85,7 +85,7 @@ function App() {
       //ici on vient filtrer le panier par rapport à la quantité du produit
       const filteredCart = updatedCartProducts.filter((item) => item.quantity > 0);
   
-      //à ce stade, les produits pour lesquels la quantité est à 0 ont été retiré du tableau filteredCart que je peux simplement envoyer à setCartProducts
+      //à ce stade, les produits pour lesquels la quantité est à 0 ont été retiré du tableau filteredCart que je peux simplement envoyer à setCart
       setCart(filteredCart)
       setList(updatedListProducts)
     }
