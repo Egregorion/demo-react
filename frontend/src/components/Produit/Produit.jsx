@@ -5,7 +5,7 @@ export function Produit({product, addToCart, removeFromCart}) {
         <article className="product-card">
             <img src={product.image} alt={product.nom} className="product-image"/>
             <h2 className="product-name">{product.nom}</h2>
-            <p className="price">€10.99</p>
+            <p className="price">{product.prix}€</p>
             {product.quantity 
                 ? (
                 <div className="d-flex center">
