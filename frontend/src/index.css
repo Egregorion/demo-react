@@ -1,10 +1,10 @@
 /* Style global */
 body {
-    font-family: 'Roboto', sans-serif; /* Police moderne et lisible */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f9f9f9; /* Fond beige clair */
-    color: #333; /* Texte principal */
+    background-color: #f9f9f9; 
+    color: #333; 
 }
 

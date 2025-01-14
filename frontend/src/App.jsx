@@ -11,7 +11,7 @@ function App() {
 
   useEffect(()=>{
     //console.log('le composant a été rendu')
-    fetch('https://api.npoint.io/68bf5db20a3c236f68ed') //interroge l'url fournie en paramètre
+    fetch('http://localhost:5000/api/produits') //interroge l'url fournie en paramètre
       .then(response => response.json())
       .then(data => setList(data))
   },[])
